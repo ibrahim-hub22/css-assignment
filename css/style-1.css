@@ -1,0 +1,83 @@
+/*General styles for the page */
+body{
+    font-family: Arial, sans-serif;
+    background-color:black; /*Background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;/*full screen height*/
+    width: 100%;
+    border: 2px solid red;
+}
+/*container box sstyles */
+.container{
+    
+    background-color:black;
+width:800px;/* Adjust width as needed*/
+border-radius: 8px; /* rounded corners*/
+text-align:center;
+height: 500px;
+border:10px solid white;
+border-bottom:25px solid white;
+/* border: 2px solid red; */
+}
+/*heading box styles*/
+.Heading { 
+    top: -20px; /*position the heading "peek out" 
+    left: 50%; /Center the heading horizontally*/
+    transform:translatex(-50%); /*align the heading perfectly*/
+    background-color: hotpink; /*Bright pink backgrounrd*/
+    color:white; /*black text for contrast*/
+    padding: 10px 20px ;
+    font-weight:bold;
+    font-size: 18px; 
+    border-radius: 10px; /*Rounded corners for the heading*/
+    
+}
+/*paragraph content styles*/
+.content p{
+    font: size 16px;
+    line-height:1.6;
+    margin: 0;
+}
+
+.wrap{ 
+    width:350px;
+    height: 250px;
+    background-color:white;
+    display: flex;
+     flex-direction:column;
+     border-radius: 6px;
+     padding:5px 15px;
+     align-items: center;
+     position: relative;
+     margin: 100px 80px;
+}
+.wrap>.heading{
+width:320px;
+height:80px;
+border-radius: 6px;
+background-color: #ff0095;
+position:absolute;
+z-index:1;
+top:-7%
+}
+.wrap .heading> h1 {
+text-align: center
+
+;
+}
+.wrap>.content{
+    width: 320px;
+    height: 150px;
+    margin-top: 70px;
+
+} 
+.wrap .content> p{
+    text-align: left;
+    font-size: 17px;
+    margin-top: 15px;
+    line-height: 1.5em;
+}
